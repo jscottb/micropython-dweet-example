@@ -1,7 +1,7 @@
 # micropython-dweet-example
 
-A simple example of using Micropython on an ESP (8266 in this case) to connect to and internet 
-connected wifi and watching the incoming tweets from Dweet.io
+A simple example of using Micropython on an ESP (8266 in this case) to connect to an internet 
+connected wifi and watch for incoming "Dweets" from Dweet.io
 
 There are two files, one in the main.py you will need to place on your device and the other 
 is an HTML file to drive the test.
