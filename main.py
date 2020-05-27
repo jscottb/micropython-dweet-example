@@ -26,6 +26,9 @@ thing_name = str('YOUR-THING-NAME', 'utf8')
 # Var to hold last dt a dweet was received.
 last_dweet_dt = str('', 'utf8')
 
+# Used to ignore the first dweet on startup.
+first_time = True
+
 def wifi_connect ():
     global SSID, PASSWD
     
@@ -40,7 +43,7 @@ def wifi_connect ():
     print('network settings:', sta_if.ifconfig())
     
 def wait_to_buzz ():
-    global last_dweet_dt, thing_name
+    global last_dweet_dt, thing_name, first_time
      
     while True:
         # Check for a new Dweet every few seconds. There is a speed limit, but 
@@ -56,13 +59,16 @@ def wait_to_buzz ():
 
             # Do the action only if the last execute time is different.
             if buzz == 'y' and created_dt != last_dweet_dt:
-                print("Buzzzz")
                 # Could save in EEPROM for restart carry over
-                last_dweet_dt = created_dt 
-                buzzer.value(1)
-                sleep(2)
-                buzzer.value (0)
-        
+                last_dweet_dt = created_dt
+                if first_time == False:
+                    print("Buzzzz")
+                    buzzer.value(1)
+                    sleep(2)
+                    buzzer.value (0)
+                else:
+                    first_time = False
+     
         r.close( )
 
 # Let's get it all started up...
