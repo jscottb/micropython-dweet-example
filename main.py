@@ -71,7 +71,7 @@ wifi_connect( )
 # GPIO13 (D7) set to OUTPUT
 buzzer = Pin(13, Pin.OUT, pull=0)
 
-# Do a quick job of the buzzer on startup
+# Do a quick jog of the buzzer on startup
 buzzer.value(0)
 buzzer.value(1)
 buzzer.value (0)
