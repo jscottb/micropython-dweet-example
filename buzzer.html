@@ -1,0 +1,31 @@
+<!--
+   ESP8266 Buzzer via Dweet.IO.
+
+   Goal in life:
+     Tests buzzer ESP8266 device and annoy all humans including myself.
+
+   Written By - Scott Beasley 2018.
+
+   Public domain. Free to use or change. Enjoy :)
+-->
+<html>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"
+          type="text/javascript" charset="utf-8">
+  </script>
+<head>
+<title>ESP8266 Dweet buzzer</title>
+<script type="text/javascript">
+var THING_NAME = 'YOUR-THING-NAME'
+
+function Buzz ( ) {
+   var requestURL = 'https://dweet.io/dweet/for/' + THING_NAME + '?buzz=y'
+   $.get (requestURL);
+}
+
+</script>
+</head>
+<center>
+  Annoy here --> 
+  <button onclick="Buzz ()">Buzz!</button>
+</center>
+</html>
