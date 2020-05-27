@@ -1,5 +1,4 @@
 # micropython-dweet-example
-An example script with an ESP running micropython watching for dweets
 
 A simple example of using Micropython on an ESP (8266 in this case) to connect to and internet 
 connected wifi and watching the incoming tweets from Dweet.io
