@@ -15,10 +15,15 @@ from machine import Pin, RTC
 from time import sleep
 
 # Globals
+
+# Add your wifi info here...
 SSID = str('YOUR-SSID', 'utf8')
 PASSWD = str('YOUR-PASSWD', 'utf8')
 
+# Add your Dweet thing name (See http://dweet.io for more info)
 thing_name = str('YOUR-THING-NAME', 'utf8')
+
+# Var to hold last dt a dweet was received.
 last_dweet_dt = str('', 'utf8')
 
 def wifi_connect ():
@@ -38,8 +43,9 @@ def wait_to_buzz ():
     global last_dweet_dt, thing_name
      
     while True:
-        # Check for a new Dweet every few seconds.
-        sleep (2)
+        # Check for a new Dweet every few seconds. There is a speed limit, but 
+        # I'm unsure what is.  
+        sleep (15)
         r = urequests.get ("http://dweet.io/get/latest/dweet/for/" + thing_name)
 
         # If the request was good, then get the data sent back.
