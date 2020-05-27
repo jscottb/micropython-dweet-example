@@ -19,13 +19,13 @@ names.
 
 Example name: "ThisXISXMyXpunyXlilXdeviceX11x05x1605"<br>
 
-Places to change in main.py:<br>
+<b>Places to change in main.py:<br>
 SSID = str('YOUR-SSID', 'utf8')<br>
 PASSWD = str('YOUR-PASSWD', 'utf8')<br>
 thing_name = str('YOUR-THING-NAME', 'utf8')<br>
 
 Place to change in the HTML:<br>
-var THING_NAME = 'YOUR-THING-NAME'<br>
+var THING_NAME = 'YOUR-THING-NAME'<br></b>
 
 Save the modified main.py to your MicroPython ESP device with Thonny, ampy or your preferred REPL
 talking method.
