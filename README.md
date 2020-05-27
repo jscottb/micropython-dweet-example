@@ -8,8 +8,8 @@ There are two files, one in the main.py you will need to place on your device an
 is an HTML file to drive the test.
 
 For information on Dweet.io and using it see: http://dweet.io/ It's free, easy to use and there
-is no registration. Dweets are public and could be seen, so no personal info please! I have used 
-it to send out GPS info, local IP's of IOT devices and of course collected data.
+is no registration. Dweets are public and could be seen by others, so no personal info please! 
+I have used it to send out GPS info, local IP's of IOT devices and of course collected data.
 
 To test it, download the files (or clone the repo) Load the main.py into you favorite text
 editor and change the following lines by adding your network SSID, wifi password and the 
