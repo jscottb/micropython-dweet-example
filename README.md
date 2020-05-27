@@ -17,15 +17,15 @@ Thing name you want to use for the DWEETS for the device. Make a name the is as 
 and your device as possible. You could just generate a GUID, but I like a little whimsy in my
 names.
 
-Example name: "ThisXISXMyXpunyXlilXdeviceX11x05x1605"
+Example name: "ThisXISXMyXpunyXlilXdeviceX11x05x1605"<br>
 
-Places to change in main.py:
-SSID = str('YOUR-SSID', 'utf8')
-PASSWD = str('YOUR-PASSWD', 'utf8')
-thing_name = str('YOUR-THING-NAME', 'utf8')
+Places to change in main.py:<br>
+SSID = str('YOUR-SSID', 'utf8')<br>
+PASSWD = str('YOUR-PASSWD', 'utf8')<br>
+thing_name = str('YOUR-THING-NAME', 'utf8')<br>
 
-Place to change in the HTML:
-var THING_NAME = 'YOUR-THING-NAME'
+Place to change in the HTML:<br>
+var THING_NAME = 'YOUR-THING-NAME'<br>
 
 Save the modified main.py to your MicroPython ESP device with Thonny, ampy or your preferred REPL
 talking method.
