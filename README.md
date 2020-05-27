@@ -10,11 +10,11 @@ For information on Dweet.io and using it see: http://dweet.io/ It's free, easy t
 is no registration. Dweets are public and could be seen by others, so no personal info please! 
 I have used it to send out GPS info, local IP's of IOT devices and of course collected data.
 
-To test it, download the files (or clone the repo) Load the main.py into you favorite text
-editor and change the following lines by adding your network SSID, wifi password and the 
+To test it, download the files (or clone the repo here), load the main.py into your favorite text
+editor and change the lines below by adding your network SSID, wifi password and the 
 Thing name you want to use for the DWEETS for the device. Make a name the is as unique to you 
-and your device as possible. You could just generate a GUID, but I like a little whimsy in my
-names.
+and your device as possible. You could just generate a GUID and use that for the name, but I like
+a little whimsy in my names.
 
 Example name: "ThisXISXMyXpunyXlilXdeviceX11x05x1605"<br>
 
