@@ -3,11 +3,11 @@
 A simple example of using Micropython on an ESP (8266 in this case) to connect to an internet 
 connected wifi and watch for incoming "Dweets" from Dweet.io
 
-There are two files, one in the main.py you will need to place on your device and the other 
+There are two files, one is main.py that you will need to place on your device and the other 
 is an HTML file to drive the test.
 
 For information on Dweet.io and using it see: http://dweet.io/ It's free, easy to use and there
-is no registration. Dweets are public and could be seen by others, so no personal info please! 
+is no registration needed. Dweets are public and could be seen by others, so no personal info please! 
 I have used it to send out GPS info, local IP's of IOT devices and of course collected data.
 
 To test it, download the files (or clone the repo here), load the main.py into your favorite text
